@@ -1,0 +1,156 @@
+execve("./riddle", ["./riddle"], 0x7ffc1a3db070 /* 65 vars */) = 0
+brk(NULL)                               = 0x55df263ef000
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=87089, ...}) = 0
+mmap(NULL, 87089, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f73f4e14000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\16\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=14560, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f73f4e12000
+mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f73f49ff000
+mprotect(0x7f73f4a02000, 2093056, PROT_NONE) = 0
+mmap(0x7f73f4c01000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f73f4c01000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\260\34\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=2030544, ...}) = 0
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f73f460e000
+mprotect(0x7f73f47f5000, 2097152, PROT_NONE) = 0
+mmap(0x7f73f49f5000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f73f49f5000
+mmap(0x7f73f49fb000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f73f49fb000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f73f4e0f000
+arch_prctl(ARCH_SET_FS, 0x7f73f4e0f740) = 0
+mprotect(0x7f73f49f5000, 16384, PROT_READ) = 0
+mprotect(0x7f73f4c01000, 4096, PROT_READ) = 0
+mprotect(0x55df24ce2000, 4096, PROT_READ) = 0
+mprotect(0x7f73f4e2a000, 4096, PROT_READ) = 0
+munmap(0x7f73f4e14000, 87089)           = 0
+rt_sigaction(SIGURG, {sa_handler=0x55df24adfb80, sa_mask=[URG], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f73f464cf20}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+write(2, "\nChallenge   0: 'Hello there'\n", 30) = 30
+openat(AT_FDCWD, "/proc/self/loginuid", O_RDONLY) = 3
+read(3, "1000", 12)                     = 4
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+brk(NULL)                               = 0x55df263ef000
+brk(0x55df26410000)                     = 0x55df26410000
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=556, ...}) = 0
+read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 556
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=87089, ...}) = 0
+mmap(NULL, 87089, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f73f4e14000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_compat.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\22\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=39744, ...}) = 0
+mmap(NULL, 2136256, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f73f4404000
+mprotect(0x7f73f440c000, 2097152, PROT_NONE) = 0
+mmap(0x7f73f460c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x8000) = 0x7f73f460c000
+close(3)                                = 0
+mprotect(0x7f73f460c000, 4096, PROT_READ) = 0
+munmap(0x7f73f4e14000, 87089)           = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=87089, ...}) = 0
+mmap(NULL, 87089, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f73f4e14000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_nis.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p \0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=47576, ...}) = 0
+mmap(NULL, 2143624, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f73f41f8000
+mprotect(0x7f73f4203000, 2093056, PROT_NONE) = 0
+mmap(0x7f73f4402000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f73f4402000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnsl.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220@\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=97176, ...}) = 0
+mmap(NULL, 2202200, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f73f3fde000
+mprotect(0x7f73f3ff5000, 2093056, PROT_NONE) = 0
+mmap(0x7f73f41f4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f73f41f4000
+mmap(0x7f73f41f6000, 6744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f73f41f6000
+close(3)                                = 0
+access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libnss_files.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P#\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=47568, ...}) = 0
+mmap(NULL, 2168632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f73f3dcc000
+mprotect(0x7f73f3dd7000, 2093056, PROT_NONE) = 0
+mmap(0x7f73f3fd6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xa000) = 0x7f73f3fd6000
+mmap(0x7f73f3fd8000, 22328, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f73f3fd8000
+close(3)                                = 0
+mprotect(0x7f73f3fd6000, 4096, PROT_READ) = 0
+mprotect(0x7f73f41f4000, 4096, PROT_READ) = 0
+mprotect(0x7f73f4402000, 4096, PROT_READ) = 0
+munmap(0x7f73f4e14000, 87089)           = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+lseek(3, 0, SEEK_CUR)                   = 0
+fstat(3, {st_mode=S_IFREG|0644, st_size=2410, ...}) = 0
+mmap(NULL, 2410, PROT_READ, MAP_SHARED, 3, 0) = 0x7f73f4e29000
+lseek(3, 2410, SEEK_SET)                = 2410
+munmap(0x7f73f4e29000, 2410)            = 0
+close(3)                                = 0
+openat(AT_FDCWD, "riddle.savegame", O_RDWR|O_CREAT, 0600) = 3
+ftruncate(3, 779)                       = 0
+mmap(NULL, 779, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f73f4e29000
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   1: 'Gatekeeper'\n", 29) = 29
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   2: 'A time to kill'"..., 33) = 33
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   3: 'what is the ans"..., 74) = 74
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   4: 'First-in, First"..., 38) = 38
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   5: 'my favourite fd"..., 40) = 40
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   6: 'ping pong'\n", 28) = 28
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   7: 'What's in a nam"..., 36) = 36
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   8: 'Big Data'\n", 27) = 27
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge   9: 'Connect'\n", 26) = 26
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  10: 'ESP'\n", 22) = 22
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  11: 'ESP-2'\n", 24) = 24
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  12: 'A delicate chan"..., 36) = 36
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  13: 'Bus error'\n", 28) = 28
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  14: 'Are you the One"..., 35) = 35
+write(2, "\33[36mWelcome back challenger. Yo"..., 48) = 48
+write(2, "\nChallenge  15: 'Tier2 Gate [eve"..., 72) = 72
+write(2, "Hint:          'Setup Tier2'.\n", 30) = 30
+write(2, "Hint:          '[ask]'.\n", 24) = 24
+openat(AT_FDCWD, "./tier2.so", O_RDONLY|O_CLOEXEC) = 4
+read(4, "", 832)                        = 0
+close(4)                                = 0
+write(2, "\33[31mFAIL\33[0m\n", 14)     = 14
+write(2, "\nChallenge  16: 'Curiosity'\n", 28) = 28
+write(2, "Hint:          'Somewhere, somet"..., 73) = 73
+write(2, "Hint:          'mmap'.\n", 23) = 23
+getpid()                                = 3984
+openat(AT_FDCWD, "./tier2.so", O_RDONLY|O_CLOEXEC) = 4
+read(4, "", 832)                        = 0
+close(4)                                = 0
+write(2, "\33[31mI wanted to find my PID ins"..., 73) = 73
+write(2, "\nNext challenge locked. Complete"..., 50) = 50
+exit_group(1)                           = ?
++++ exited with 1 +++

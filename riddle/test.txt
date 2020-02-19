@@ -1,0 +1,6 @@
+ex8.big data, ti allo mporoysa na kanw?
+9.prepei na kseroyme ti paizei me ta diktya? an nai ti einai port kai ti address
+10. poia h diafora me to 11, apla anoiga kai sta 2 ena arxeio kai to diabaza prin ginei unlink
+12. mmap, an 2diergasies mporoyn na blepoyn thn idia mnhmh, deikse man. eida paradeigmata mono me fork
+afoy akoma kai meta blepoyn diaforetika virtual addresses.
+13.apla hthele ena xazo-truncate? isws den katalaba kala . epishs apth diafora toy segfault me to buserror
